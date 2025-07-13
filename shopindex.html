@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop our latest fashion designs and custom clothing.">
+    <title>Fashion Shop - Four Smart Brother's Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="shop.css">
+
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                <span>Four Smart Brother's Ltd</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shopindex.html" class="active">Fashion Shop</a></li>
+                    <li><a href="founder.html">Founder</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    <a href="signup.html" class="btn btn-signup">Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop-hero">
+        <div class="container">
+            <h1>Fashion Collection</h1>
+            <p>Discover our latest designs and create your custom outfits</p>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-controls">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="men">Men's Wear</option>
+                        <option value="women">Women's Wear</option>
+                        <option value="kids">Kids' Wear</option>
+                        <option value="custom">Custom Designs</option>
+                    </select>
+                    <select id="sortBy">
+                        <option value="popular">Sort by: Popular</option>
+                        <option value="newest">Sort by: Newest</option>
+                        <option value="price-low">Sort by: Price Low to High</option>
+                        <option value="price-high">Sort by: Price High to Low</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card" data-category="men">
+                    <div class="product-image">
+                        <img src="images/men-trwear.jpg" alt="Men's African Print Shirt">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="1"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" data-id="1"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Men's African Print Shirt</h3>
+                        <div class="product-price">
+                            <span class="price">GHS 300.00</span>
+                            <span class="old-price">GHS 450.00</span>
+                        </div>
+                        <button class="btn btn-small add-to-cart" data-id="1" data-name="Men's African Print Shirt" data-price="250" data-image="../images/product1.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="women">
+                    <div class="product-image">
+                        <img src="images/women-kente.jpg" alt="Women's Kente Dress">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" data-id="2"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Women's Kente Dress</h3>
+                        <div class="product-price">
+                            <span class="price">GHS 350.00</span>
+                        </div>
+                        <button class="btn btn-small add-to-cart" data-id="2" data-name="Women's Kente Dress" data-price="350" data-image="../images/product2.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="custom">
+                    <div class="product-image">
+                        <img src="images/men-trwear.jpg" alt="Custom Design Service">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" data-id="3"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Custom Design Service</h3>
+                        <div class="product-price">
+                            <span class="price">Starting from GHS 400.00</span>
+                        </div>
+                        <a href="product.html?id=3" class="btn btn-small">Customize Now</a>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="men">
+                    <div class="product-image">
+                        <img src="images/mensuit.jpg" alt="Men's Formal Suit">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" data-id="4"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Men's Formal Suit</h3>
+                        <div class="product-price">
+                            <span class="price">GHS 800.00</span>
+                        </div>
+                        <button class="btn btn-small add-to-cart" data-id="4" data-name="Men's Formal Suit" data-price="600" data-image="../images/product4.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="women">
+                    <div class="product-image">
+                        <img src="images/ladieswear.jpg" alt="Women's Office Wear">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" data-id="5"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Women's Office Wear</h3>
+                        <div class="product-price">
+                            <span class="price">GHS 280.00</span>
+                            <span class="old-price">GHS 350.00</span>
+                        </div>
+                        <button class="btn btn-small add-to-cart" data-id="5" data-name="Women's Office Wear" data-price="280" data-image="../images/product5.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kids">
+                    <div class="product-image">
+                        <img src="images/kidwear.jpg" alt="Kids' Traditional Wear">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="6"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist" data-id="6"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kids' Traditional Wear</h3>
+                        <div class="product-price">
+                            <span class="price">GHS 180.00</span>
+                        </div>
+                        <button class="btn btn-small add-to-cart" data-id="6" data-name="Kids' Traditional Wear" data-price="180" data-image="../images/product6.jpg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="btn btn-small"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn btn-small active">1</button>
+                <button class="btn btn-small">2</button>
+                <button class="btn btn-small">3</button>
+                <button class="btn btn-small">4</button>
+                <button class="btn btn-small">5</button>
+                <button class="btn btn-small"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-design-section">
+        <div class="container">
+            <div class="custom-design-content">
+                <h2>Want Something Unique?</h2>
+                <p>Create your custom design with our fashion experts. Upload your design or describe your vision and we'll bring it to life.</p>
+                <a href="product.html?id=custom" class="btn btn-primary">Start Custom Design</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                        <span>Four Smart Brother's Ltd</span>
+                    </div>
+                    <p>We Solve, You Succeed</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shopindex.html">Fashion Shop</a></li>
+                        <li><a href="founder.html">Founder</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Shop Categories</h3>
+                    <ul>
+                        <li><a href="index.html?category =men">Men's Wear</a></li>
+                        <li><a href="index.html?category=women">Women's Wear</a></li>
+                        <li><a href="index.html?category=kids">Kids' Wear</a></li>
+                        <li><a href="index.html?category=custom">Custom Designs</a></li>
+                        <li><a href="index.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tema Community 22 Annex, Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233500694540</p>
+                    <p><i class="fas fa-envelope"></i> info@foursmartbrothers.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Four Smart Brother's Ltd. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <img src="images/mtnmomo.jpg" alt="Mobile Money">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Product filtering
+        const categoryFilter = document.getElementById('categoryFilter');
+        const sortBy = document.getElementById('sortBy');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        function filterProducts() {
+            const category = categoryFilter.value;
+            const sort = sortBy.value;
+            
+            productCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // In a real app, you would sort the products based on the selected option
+        }
+        
+        categoryFilter.addEventListener('change', filterProducts);
+        sortBy.addEventListener('change', filterProducts);
+        
+        // Quick view functionality
+        document.querySelectorAll('.quick-view').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productId = this.getAttribute('data-id');
+                window.location.href = `product.html?id=${productId}`;
+            });
+        });
+        
+        // Add to wishlist
+        document.querySelectorAll('.add-to-wishlist').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productId = this.getAttribute('data-id');
+                const heartIcon = this.querySelector('i');
+                
+                heartIcon.classList.toggle('far');
+                heartIcon.classList.toggle('fas');
+                heartIcon.classList.toggle('active');
+                
+                // In a real app, you would add/remove from wishlist
+                if (heartIcon.classList.contains('active')) {
+                    alert('Added to wishlist!');
+                } else {
+                    alert('Removed from wishlist!');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

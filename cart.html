@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your shopping cart at Four Smart Brother's Ltd.">
+    <title>Shopping Cart - Four Smart Brother's Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="cart-item">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                <span>Four Smart Brother's Ltd</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="product.html">Fashion Shop</a></li>
+                    <li><a href="founder.html">Founder</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    <a href="signup.html" class="btn btn-signup">Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-hero">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <a href="shopindex.html">Shop</a> / <span>Cart</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <div class="cart-items" id="cartItemsContainer">
+                    <div id="emptyCart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h2>Your cart is empty</h2>
+                        <p>Looks like you haven't added anything to your cart yet</p>
+                        <a href="product.html" class="btn btn-primary">Continue Shopping</a>
+                    </div>
+                    
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+                
+                <div class="cart-summary" id="checkoutSection">
+                    <h2>Order Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">GHS 0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="shipping">GHS 0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span id="tax">GHS 0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="total">GHS 0.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="coupon-code">
+                        <input type="text" placeholder="Enter coupon code">
+                        <button class="btn btn-small">Apply</button>
+                    </div>
+                    
+                    <button id="checkoutBtn" class="btn btn-primary btn-block">Proceed to Checkout</button>
+                    
+                    <div class="payment-methods">
+                        <p>We accept:</p>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <img src="images/mtnmomo.jpg" alt="Mobile Money">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recently-viewed">
+                <h2>Recently Viewed</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="men">
+                        <div class="product-image">
+                            <img src="images/mensuit.jpg" alt="Men's Formal Suit">
+                            <div class="product-actions">
+                                <button class="quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist" data-id="4"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Men's Formal Suit</h3>
+                            <div class="product-price">
+                                <span class="price">GHS 600.00</span>
+                            </div>
+                            <button class="btn btn-small add-to-cart" data-id="4" data-name="Men's Formal Suit" data-price="600" data-image="../images/product4.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="women">
+                        <div class="product-image">
+                            <img src="images/ladieswear.jpg" alt="Women's Office Wear">
+                            <div class="product-actions">
+                                <button class="quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist" data-id="5"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Women's Office Wear</h3>
+                            <div class="product-price">
+                                <span class="price">GHS 280.00</span>
+                                <span class="old-price">GHS 350.00</span>
+                            </div>
+                            <button class="btn btn-small add-to-cart" data-id="5" data-name="Women's Office Wear" data-price="280" data-image="../images/product5.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="custom">
+                        <div class="product-image">
+                            <img src="images/men-trwear.jpg" alt="Custom Design Service">
+                            <div class="product-actions">
+                                <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist" data-id="3"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Custom Design Service</h3>
+                            <div class="product-price">
+                                <span class="price">Starting from GHS 400.00</span>
+                            </div>
+                            <a href="product.html?id=3" class="btn btn-small">Customize Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                        <span>Four Smart Brother's Ltd</span>
+                    </div>
+                    <p>We Solve, You Succeed</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shopindex.html">Fashion Shop</a></li>
+                        <li><a href="founder.html">Founder</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Shop Categories</h3>
+                    <ul>
+                        <li><a href="index.html?category=men">Men's Wear</a></li>
+                        <li><a href="index.html?category=women">Women's Wear</a></li>
+                        <li><a href="index.html?category=kids">Kids' Wear</a></li>
+                        <li><a href="index.html?category=custom">Custom Designs</a></li>
+                        <li><a href="index.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tema Community 22 Annex,Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233500694540</p>
+                    <p><i class="fas fa-envelope"></i> info@foursmartbrothers.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Four Smart Brother's Ltd. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <img src="images/mtnmomo.jpg" alt="Mobile Money">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+    <script src="rendercart.js"></script>
+    
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Payment options for Four Smart Brother's Ltd services.">
+    <title>Payments - Four Smart Brother's Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                <span>Four Smart Brother's Ltd</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shopindex.html">Fashion Shop</a></li>
+                    <li><a href="founder.html">Founder</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    <a href="signup.html" class="btn btn-signup">Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="payments-hero">
+        <div class="container">
+            <h1>Payment Options</h1>
+            <p>Choose your preferred payment method for our services</p>
+        </div>
+    </section>
+
+    <section class="payment-methods-section">
+        <div class="container">
+            <div class="payment-tabs">
+                <button class="tab-btn active" data-tab="bank-transfer">Bank Transfer</button>
+                <button class="tab-btn" data-tab="mobile-money">Mobile Money</button>
+                <button class="tab-btn" data-tab="paypal">PayPal</button>
+                <button class="tab-btn" data-tab="credit-card">Credit Card</button>
+            </div>
+            
+            <div class="payment-content">
+                <div id="bank-transfer" class="tab-content active">
+                    <h2>Bank Transfer</h2>
+                    <p>Make direct transfers to any of our bank accounts:</p>
+                    
+                    <div class="bank-accounts">
+                        <div class="bank-account">
+                            <h3>Ghana Commercial Bank,PLC</h3>
+                            <p><strong>Account Name:</strong> Miracle Aneke</p>
+                            <p><strong>Account Number:</strong> 1211010176396</p>
+                            <p><strong>Branch:</strong> Ashaiman Branch</p>
+                        </div>
+                        
+                        <div class="bank-account">
+                            <h3>Stanbic Bank Ltd</h3>
+                            <p><strong>Account Name:</strong>Miracle Aneke</p>
+                            <p><strong>Account Number:</strong>9040012298786</p>
+                            <p><strong>Branch:</strong> Ashaiman Branch</p>
+                        </div>
+                        
+                        <div class="bank-account">
+                            <h3>Lead Bank</h3>
+                            <p><strong>Account Name:</strong> Miracle Aneke</p>
+                            <p><strong>Account Number:</strong>211549063797</p>
+                            <p><strong>ACH Routing</strong> 101019644</p>
+                            <p><strong>Branch:</Address>:</strong> 1801 Main St, Kansas City ,MO 64108</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-instructions">
+                        <h3>Payment Instructions:</h3>
+                        <ol>
+                            <li>Make transfer to any of the accounts above</li>
+                            <li>Include your name or order number as reference</li>
+                            <li>Send payment confirmation to miracleaneke91@gmail.com</li>
+                            <li>Your payment will be verified within 24 hours</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div id="mobile-money" class="tab-content">
+                    <h2>Mobile Money</h2>
+                    <p>Make instant payments via mobile money:</p>
+                    
+                    <div class="mobile-money-options">
+                        <div class="mobile-money-option">
+                            <img src="images/mtnmomo.jpg" alt="MTN Mobile Money">
+                            <p><strong>Number:</strong> 0596898059</p>
+                            <p><strong>Name:</strong> Miracle Aneke</p>
+                        </div>
+                        
+                        <div class="mobile-money-option">
+                            <img src="images/vcash.jpg" alt="Vodafone Cash">
+                            <p><strong>Number:</strong> 0500694540</p>
+                            <p><strong>Name:</strong>Miracle Aneke</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-instructions">
+                        <h3>Payment Instructions:</h3>
+                        <ol>
+                            <li>Initiate mobile money transfer to the number above</li>
+                            <li>Include your name or order number as reference</li>
+                            <li>Take screenshot of payment confirmation</li>
+                            <li>Send screenshot to miracleaneke91@gmail.com</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div id="paypal" class="tab-content">
+                    <h2>PayPal</h2>
+                    <p>Make secure international payments via PayPal:</p>
+                    
+                    <div class="paypal-info">
+                        <img src="images/paypal-logo.png" alt="PayPal">
+                        <p><strong>PayPal Email:</strong> miracleaneke91@gmail.com</p>
+                    </div>
+                    
+                    <div class="payment-instructions">
+                        <h3>Payment Instructions:</h3>
+                        <ol>
+                            <li>Log in to your PayPal account</li>
+                            <li>Send payment to our PayPal email above</li>
+                            <li>Include your name or order number in the notes</li>
+                            <li>Forward payment confirmation to miracleaneke91@gmail.com</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="paypal-button-container">
+                        <div id="paypal-button"></div>
+                    </div>
+                </div>
+                
+                <div id="credit-card" class="tab-content">
+                    <h2>Credit/Debit Card</h2>
+                    <p>Make secure payments with your credit or debit card:</p>
+                    
+                    <form id="cardPaymentForm" class="card-form">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" id="cardName" name="cardName" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiryDate">Expiry Date</label>
+                                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="amount">Amount (GHS)</label>
+                            <input type="number" id="amount" name="amount" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Pay Now</button>
+                    </form>
+                    
+                    <div class="accepted-cards">
+                        <p>We accept:</p>
+                        <div class="card-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-discover"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-faq">
+        <div class="container">
+            <h2>Payment FAQs</h2>
+            
+            <div class="faq-item">
+                <h3>How long does it take for my payment to be processed?<i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-content">
+                    <p>Bank transfers and mobile money payments are typically processed within 24 hours of receiving your payment confirmation. PayPal payments are usually processed instantly.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Is it safe to pay with my credit card on your website?<i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-content">
+                    <p>Yes, all credit card transactions are processed through secure payment gateways with encryption to protect your information.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you accept payments in other currencies?<i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-content">
+                    <p>Yes, we accept USD, EUR, and GBP through PayPal. The amount will be converted to GHS at the current exchange rate.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What should I do if my payment fails?<i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-content">
+                    <p>If your payment fails, please try again or use an alternative payment method. If the problem persists, contact our support team at payments@foursmartbrothers.com.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I get a receipt for my payment?<i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-content">
+                    <p>Yes, we provide receipts for all payments. You will receive an email receipt within 24 hours of your payment being processed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                        <span>Four Smart Brother's Ltd</span>
+                    </div>
+                    <p>We Solve, You Succeed</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shopindex.html">Fashion Shop</a></li>
+                        <li><a href="founder.html">Founder</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-design">Web Design</a></li>
+                        <li><a href="services.html#fashion">Fashion Design</a></li>
+                        <li><a href="services.html#real-estate">Real Estate</a></li>
+                        <li><a href="services.html#tutoring">Private Tutoring</a></li>
+                        <li><a href="services.html#agriculture">Agriculture</a></li>
+                        <li><a href="services.html#import">Importation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tema Community 22 Annex,Greater Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233500694540</p>
+                    <p><i class="fas fa-envelope"></i> info@foursmartbrothers.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Four Smart Brother's Ltd. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <img src="images/mtnmomo.jpg" alt="Mobile Money">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+    
+    <script src="main.js"></script>
+    <script>
+        // Payment tabs functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // PayPal button rendering
+        if (document.getElementById('paypal-button')) {
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: '100.00' // This should be dynamically set based on cart total
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('Payment completed by ' + details.payer.name.given_name);
+                        // Process payment on your server
+                    });
+                }
+            }).render('#paypal-button');
+        }
+        
+        // FAQ accordion
+        const faqItems = document.querySelectorAll('.faq-item h3');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                const icon = item.querySelector('i');
+                
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html>

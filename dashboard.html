@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | Four Smart Brothers Ltd</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <img src="images/fourb.jpg" alt="Four Smart Brothers Ltd" class="logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#dashboard" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+          <li><a href="shopindex.html"><i class="fas fa-store"></i> Shop</a></li>
+          <li><a href="cart.html"><i class="fas fa-history"></i> My Orders</a></li>
+          <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
+          <li><a href="#security"><i class="fas fa-shield-alt"></i> Security</a></li>
+          <li><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Dashboard Overview -->
+      <section id="dashboard" class="content-section">
+        <h2><i class="fas fa-home"></i> Dashboard</h2>
+        <div class="welcome-banner">
+          <h3>Welcome back, <span id="user-name">User</span>!</h3>
+          <p>Your last login was <span id="last-login">today</span>.</p>
+        </div>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <i class="fas fa-shopping-bag"></i>
+            <h4>Active Orders</h4>
+            <p id="active-orders">0</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-check-circle"></i>
+            <h4>Completed Orders</h4>
+            <p id="completed-orders">0</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop Section -->
+      <section id="shop" class="content-section hidden">
+        <h2><i class="fas fa-store"></i> Shop Products</h2>
+        <div class="product-grid" id="product-grid">
+          <!-- Products loaded via JavaScript -->
+        </div>
+      </section>
+
+      <!-- Order History -->
+      <section id="orders" class="content-section hidden">
+        <h2><i class="fas fa-history"></i> Order History</h2>
+        <table class="order-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Items</th>
+              <th>Total</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="order-history">
+            <!-- Orders loaded via JavaScript -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Profile Settings -->
+      <section id="profile" class="content-section hidden">
+        <h2><i class="fas fa-user"></i> Profile Settings</h2>
+        <div class="profile-card">
+          <div class="avatar-section">
+            <img src="https://ui-avatars.com/api/?name=User&background=2c3e50&color=fff" 
+                 alt="Profile" id="profile-avatar">
+            <input type="file" id="avatar-upload" accept="image/*">
+            <button id="change-avatar">Update Photo</button>
+          </div>
+          
+          <form id="profile-form">
+            <div class="form-group">
+              <label for="profile-name">Full Name</label>
+              <input type="text" id="profile-name" required>
+            </div>
+            <div class="form-group">
+              <label for="profile-email">Email</label>
+              <input type="email" id="profile-email" disabled>
+            </div>
+            <div class="form-group">
+              <label for="profile-phone">Phone Number</label>
+              <input type="tel" id="profile-phone">
+            </div>
+            <button type="submit" class="btn-save">
+              <i class="fas fa-save"></i> Save Changes
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Security Settings -->
+      <section id="security" class="content-section hidden">
+        <h2><i class="fas fa-shield-alt"></i> Security</h2>
+        <div class="security-card">
+          <!-- Password Change -->
+          <div class="setting-group">
+            <h3><i class="fas fa-key"></i> Change Password</h3>
+            <form id="password-form">
+              <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <input type="password" id="current-password" required>
+              </div>
+              <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" required>
+              </div>
+              <button type="submit" class="btn-save">
+                <i class="fas fa-key"></i> Update Password
+              </button>
+            </form>
+          </div>
+
+          <!-- Two-Factor Authentication -->
+          <div class="setting-group">
+            <h3><i class="fas fa-mobile-alt"></i> Two-Factor Authentication</h3>
+            <div class="toggle-setting">
+              <label class="toggle-switch">
+                <input type="checkbox" id="enable-2fa">
+                <span class="slider"></span>
+              </label>
+              <span>Enable 2FA</span>
+            </div>
+            <div id="2fa-options" class="hidden">
+              <p>Choose verification method:</p>
+              <select id="2fa-method">
+                <option value="sms">SMS</option>
+                <option value="email">Email</option>
+              </select>
+              <button id="save-2fa" class="btn-save">
+                <i class="fas fa-save"></i> Save Settings
+              </button>
+            </div>
+          </div>
+
+          <!-- Delete Account -->
+          <div class="setting-group danger-zone">
+            <h3><i class="fas fa-exclamation-triangle"></i> Danger Zone</h3>
+            <button id="delete-account" class="btn-danger">
+              <i class="fas fa-trash"></i> Delete My Account
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Confirmation Modal for Account Deletion -->
+  <div id="delete-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Confirm Account Deletion</h3>
+      <p>Are you sure you want to delete your account? This action cannot be undone.</p>
+      <div class="modal-buttons">
+        <button id="confirm-delete" class="btn-danger">Delete Forever</button>
+        <button id="cancel-delete" class="btn-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="auth.js"></script>
+  <script src="products.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

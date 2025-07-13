@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product details and customization options.">
+    <title>Product Details - Four Smart Brother's Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                <span>Four Smart Brother's Ltd</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shopindex.html">Fashion Shop</a></li>
+                    <li><a href="founder.html">Founder</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    <a href="signup.html" class="btn btn-signup">Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-hero">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <a href="shopindex.html">Shop</a> / <span>Product Details</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-details-section">
+        <div class="container">
+            <div class="product-details">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="images/men-trwear.jpg" alt="Men's African Print Shirt" id="mainImage">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/product1-thumb1.jpg" alt="Thumbnail 1" class="thumbnail active" data-large="../images/product1-large.jpg">
+                        <img src="images/product1-thumb2.jpg" alt="Thumbnail 2" class="thumbnail" data-large="../images/product1-large2.jpg">
+                        <img src="images/product1-thumb3.jpg" alt="Thumbnail 3" class="thumbnail" data-large="../images/product1-large3.jpg">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1>Men's African Print Shirt</h1>
+                    <div class="product-meta">
+                        <span class="product-code">Product Code: FS001</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24 reviews)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">GHS 250.00</span>
+                        <span class="old-price">GHS 300.00</span>
+                        <span class="discount">17% OFF</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>This stylish African print shirt is perfect for any occasion. Made with high-quality Ankara fabric, it combines traditional African patterns with modern tailoring for a comfortable and fashionable fit.</p>
+                        <ul>
+                            <li>100% Cotton African Print Fabric</li>
+                            <li>Machine Washable</li>
+                            <li>Available in multiple sizes</li>
+                            <li>Standard and slim fit options</li>
+                        </ul>
+                    </div>
+                    
+                    <form class="product-options">
+                        <div class="option-group">
+                            <label for="size">Size:</label>
+                            <select id="size" name="size">
+                                <option value="small">Small</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">X-Large</option>
+                            </select>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label for="color">Color:</label>
+                            <div class="color-options">
+                                <input type="radio" id="color1" name="color" value="red" checked>
+                                <label for="color1" style="background-color: #a83232;" title="Red"></label>
+                                
+                                <input type="radio" id="color2" name="color" value="blue">
+                                <label for="color2" style="background-color: #3238a8;" title="Blue"></label>
+                                
+                                <input type="radio" id="color3" name="color" value="green">
+                                <label for="color3" style="background-color: #32a852;" title="Green"></label>
+                                
+                                <input type="radio" id="color4" name="color" value="yellow">
+                                <label for="color4" style="background-color: #e8e832;" title="Yellow"></label>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-selector">
+                                <button type="button" class="quantity-btn minus">-</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                                <button type="button" class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button type="button" class="btn btn-primary add-to-cart" data-id="1" data-name="Men's African Print Shirt" data-price="250" data-image="../images/product1.jpg">Add to Cart</button>
+                            <button type="button" class="btn btn-secondary add-to-wishlist">
+                                <i class="far fa-heart"></i> Wishlist
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="product-share">
+                        <span>Share:</span>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-btn" data-tab="customization">Customization</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div id="description" class="tab-content active">
+                        <h2>Product Description</h2>
+                        <p>Our Men's African Print Shirt is a celebration of African culture and contemporary fashion. Each shirt is carefully crafted by our skilled tailors using premium quality Ankara fabric sourced directly from local markets.</p>
+                        <p>The shirt features a classic button-down design with a regular collar, short sleeves, and a straight hem. The vibrant colors and intricate patterns make this shirt stand out while maintaining a professional look suitable for both casual and semi-formal occasions.</p>
+                        <p>We offer standard and slim fit options to ensure the perfect fit for every body type. All our shirts are pre-washed to prevent shrinkage and maintain color vibrancy after multiple washes.</p>
+                    </div>
+                    
+                    <div id="specifications" class="tab-content">
+                        <h2>Product Specifications</h2>
+                        <table>
+                            <tr>
+                                <th>Material</th>
+                                <td>100% Cotton African Print Fabric</td>
+                            </tr>
+                            <tr>
+                                <th>Care Instructions</th>
+                                <td>Machine wash cold, gentle cycle. Do not bleach. Tumble dry low. Iron on low heat.</td>
+                            </tr>
+                            <tr>
+                                <th>Sizes Available</th>
+                                <td>Small, Medium, Large, X-Large</td>
+                            </tr>
+                            <tr>
+                                <th>Fit</th>
+                                <td>Standard and Slim fit options</td>
+                            </tr>
+                            <tr>
+                                <th>Origin</th>
+                                <td>Designed and Tailored in Ghana</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div id="reviews" class="tab-content">
+                        <h2>Customer Reviews</h2>
+                        <div class="review-form">
+                            <h3>Write a Review</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="reviewName">Your Name</label>
+                                    <input type="text" id="reviewName" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reviewEmail">Email Address</label>
+                                    <input type="email" id="reviewEmail" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Rating</label>
+                                    <div class="rating-stars">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                    </div>
+                                    <input type="hidden" id="rating" name="rating" value="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reviewTitle">Review Title</label>
+                                    <input type="text" id="reviewTitle" name="title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reviewText">Your Review</label>
+                                    <textarea id="reviewText" name="review" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Review</button>
+                            </form>
+                        </div>
+                        
+                        <div class="reviews-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="review-author">Kwame Osei</div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review-date">June 15, 2023</div>
+                                </div>
+                                <h3 class="review-title">Excellent Quality</h3>
+                                <p class="review-text">The shirt is even better in person than in the pictures. The fabric is high quality and the stitching is perfect. I've received many compliments already!</p>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="review-author">Ama Serwaa</div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="review-date">May 28, 2023</div>
+                                </div>
+                                <h3 class="review-title">Beautiful Design</h3>
+                                <p class="review-text">Bought this for my husband and he loves it. The colors are vibrant and the fit is perfect. Only gave 4 stars because delivery took longer than expected.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="customization" class="tab-content">
+                        <h2>Customization Options</h2>
+                        <p>Make this product uniquely yours with our customization services. Upload your design or describe your vision and our fashion experts will bring it to life.</p>
+                        
+                        <div class="customization-options">
+                            <div class="custom-option">
+                                <h3>Upload Your Design</h3>
+                                <div class="upload-area">
+                                    <input type="file" id="designUpload" accept="image/*">
+                                    <label for="designUpload">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <p>Click to upload or drag and drop</p>
+                                        <span>JPG, PNG (Max 5MB)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="custom-option">
+                                <h3>Describe Your Design</h3>
+                                <textarea placeholder="Describe your custom design in detail..."></textarea>
+                            </div>
+                            
+                            <div class="custom-option">
+                                <h3>Additional Instructions</h3>
+                                <textarea placeholder="Any special instructions or requirements..."></textarea>
+                            </div>
+                            
+                            <button class="btn btn-primary">Request Custom Design</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="men">
+                        <div class="product-image">
+                            <img src="images/mensuit.jpg" alt="Men's Formal Suit">
+                            <div class="product-actions">
+                                <button class="quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist" data-id="4"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Men's Formal Suit</h3>
+                            <div class="product-price">
+                                <span class="price">GHS 600.00</span>
+                            </div>
+                            <button class="btn btn-small add-to-cart" data-id="4" data-name="Men's Formal Suit" data-price="600" data-image="../images/product4.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="women">
+                        <div class="product-image">
+                            <img src="images/ladieswear.jpg" alt="Women's Office Wear">
+                            <div class="product-actions">
+                                <button class="quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist" data-id="5"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Women's Office Wear</h3>
+                            <div class="product-price">
+                                <span class="price">GHS 280.00</span>
+                                <span class="old-price">GHS 350.00</span>
+                            </div>
+                            <button class="btn btn-small add-to-cart" data-id="5" data-name="Women's Office Wear" data-price="280" data-image="../images/product5.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="custom">
+                        <div class="product-image">
+                            <img src="images/product3.jpg" alt="Custom Design Service">
+                            <div class="product-actions">
+                                <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                                <button class="add-to-wishlist" data-id="3"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Custom Design Service</h3>
+                            <div class="product-price">
+                                <span class="price">Starting from GHS 400.00</span>
+                            </div>
+                            <a href="product.html?id=3" class="btn btn-small">Customize Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/fourb.jpg" alt="Four Smart Brother's Ltd Logo">
+                        <span>Four Smart Brother's Ltd</span>
+                    </div>
+                    <p>We Solve, You Succeed</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="shopindex.html">Fashion Shop</a></li>
+                        <li><a href="founder.html">Founder</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Shop Categories</h3>
+                    <ul>
+                        <li><a href="index.html?category=men">Men's Wear</a></li>
+                        <li><a href="index.html?category=women">Women's Wear</a></li>
+                        <li><a href="index.html?category=kids">Kids' Wear</a></li>
+                        <li><a href="index.html?category=custom">Custom Designs</a></li>
+                        <li><a href="index.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tema Community 22 Annex,Greater Accra, Ghana</p>
+                    <p><i class="fas fa-phone"></i> +233 500694540</p>
+                    <p><i class="fas fa-envelope"></i> info@foursmartbrothers.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Four Smart Brother's Ltd. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <img src="images/mtnmomo.jpg" alt="Mobile Money">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Product image gallery
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('mainImage');
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                const newImage = this.getAttribute('data-large');
+                mainImage.src = newImage;
+                
+                thumbnails.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Product tabs
+        const tabBtns = document.querySelectorAll('.product-tabs .tab-btn');
+        const tabContents = document.querySelectorAll('.product-tabs .tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Quantity selector
+        const minusBtn = document.querySelector('.quantity-btn.minus');
+        const plusBtn = document.querySelector('.quantity-btn.plus');
+        const quantityInput = document.getElementById('quantity');
+        
+        minusBtn.addEventListener('click', () => {
+            let value = parseInt(quantityInput.value);
+            if (value > 1) {
+                quantityInput.value = value - 1;
+            }
+        });
+        
+        plusBtn.addEventListener('click', () => {
+            let value = parseInt(quantityInput.value);
+            quantityInput.value = value + 1;
+        });
+        
+        // Rating stars
+        const stars = document.querySelectorAll('.rating-stars i');
+        const ratingInput = document.getElementById('rating');
+        
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                ratingInput.value = rating;
+                
+                stars.forEach((s, index) => {
+                    if (index < rating) {
+                        s.classList.remove('far');
+                        s.classList.add('fas');
+                    } else {
+                        s.classList.remove('fas');
+                        s.classList.add('far');
+                    }
+                });
+            });
+            
+            star.addEventListener('mouseover', function() {
+                const rating = this.getAttribute('data-rating');
+                
+                stars.forEach((s, index) => {
+                    if (index < rating) {
+                        s.classList.remove('far');
+                        s.classList.add('fas');
+                    }
+                });
+            });
+            
+            star.addEventListener('mouseout', function() {
+                const currentRating = ratingInput.value;
+                
+                stars.forEach((s, index) => {
+                    if (index >= currentRating) {
+                        s.classList.remove('fas');
+                        s.classList.add('far');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
